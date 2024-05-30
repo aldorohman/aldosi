@@ -1,10 +1,10 @@
 #!/bin/bash
 
-RPC_URL="https://near.lava.build/lava-referer-8b51600b-b3cc-4893-89ec-5de41f0724db/"
+RPC_URL="https://near.lava.build/lava-referer-0dbe1131-0a35-4469-a3a9-8220d128c944/"
 
 OUTPUT_DIR="logs"
 
-near_data=$(curl -s -H "Content-Type: application/json" -X POST --data '{"jsonrpc":"2.0","method":"block","id":"HappyCuanAirdrop","params":{"finality":"final"}}' "$RPC_URL")
+near_data=$(curl -s -H "Content-Type: application/json" -X POST --data '{"jsonrpc":"2.0","method":"block","id":"alicomm","params":{"finality":"final"}}' "$RPC_URL")
 
 if [ $? -eq 0 ]; then
     if [ ! -d "$OUTPUT_DIR" ]; then
